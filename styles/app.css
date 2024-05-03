@@ -1,16 +1,33 @@
 @font-face {
-    font-family: "Comic Sans"; 
-    src: url("../assets/common/fonts/comicsans.ttf") format("truetype"); 
+    font-family: "Comic Sans";
+    src: url("../assets/common/fonts/comicsans.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: "Pricedown"; 
-    src: url("../assets/common/fonts/pricedown.ttf") format("truetype"); 
+    font-family: "Pricedown";
+    src: url("../assets/common/fonts/pricedown.ttf") format("truetype");
 }
-
 
 body {
     margin: 0;
+    margin-left: auto;
+    margin-right: auto;
     color: #212529;
     font-family: Comic Sans;
+}
+
+header {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-family: Roboto;
+}
+
+:root {
+    --green-color: #6E9F57;
+    --black-color: #151515;
+    --white-color: #E1E1E1;
 }
