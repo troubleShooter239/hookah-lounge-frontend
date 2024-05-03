@@ -23,6 +23,7 @@ body {
 }
 
 header {
+    padding: 1vh 0 1vh 0;
     position: fixed;
     width: 100%;
     display: flex;
@@ -59,6 +60,20 @@ a {
     display: flex;
     gap: 5vw;
     flex-wrap: wrap;
+}
+
+.container-with-background-img {
+    background-image: url("../assets/index/2telki.png");
+    min-height: 100vh;
+    min-width: 100vw;
+    background-size: cover;
+}
+
+.reserve-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
 }
 
 :root {
