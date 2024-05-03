@@ -8,6 +8,11 @@
     src: url("../assets/common/fonts/pricedown.ttf") format("truetype");
 }
 
+@font-face {
+    font-family: "Roboto-Light"; 
+    src: url("../assets/common/fonts/roboto.ttf") format("truetype"); 
+}
+
 body {
     margin: 0;
     margin-left: auto;
