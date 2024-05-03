@@ -1,0 +1,10 @@
+body{
+    background-color: black;
+    color:white;
+}
+.order
+{
+    background-image: url('./assets/about us/image 13.png');
+    min-height: 100hv;
+    height: 100%;
+}

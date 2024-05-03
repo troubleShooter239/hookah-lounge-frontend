@@ -1,0 +1,126 @@
+body{
+    background-color: black;
+    color:white;
+}
+
+.news-title{
+    font-family: Pricedown;
+    font-size: 36px;
+}
+
+.news-text
+{
+    width: 640px;
+    font-size: 24px;
+    margin-left: 3rem;
+
+}
+.post
+{
+    display: flex;
+    justify-content: center;
+    margin: 3rem;
+    width: auto;
+
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.slider::before, .slider::after {
+    background: linear-gradient(to right, black 0%, rgba(255, 255, 255, 0) 100%);
+    content: "";
+    height: 100%;
+    position: absolute;
+    width: 100px;
+    z-index: 2;
+}
+
+.slider::after {
+    right: 0;
+    top: 0;
+    -webkit-transform: rotateZ(180deg);
+    transform: rotateZ(180deg);
+}
+
+.slider::before {
+    left: 0;
+    top: 0;
+}
+
+.slider .slide-track:hover {
+    animation-play-state: paused;
+}
+
+.slide:nth-child(1), .slide:nth-child(10) {
+    background-image: url(./assets/news/image9.png);
+}
+
+.slide:nth-child(2), .slide:nth-child(11) {
+    background-image: url(./assets/news/image9.png);
+}
+
+.slide:nth-child(3), .slide:nth-child(12) {
+    background-image: url(./assets/news/image9.png);
+}
+
+.slide:nth-child(4), .slide:nth-child(13) {
+    background-image: url(./assets/news/image9.png);
+}
+
+.slide:nth-child(5), .slide:nth-child(14) {
+    background-image: url(./assets/news/image9.png);
+}
+
+.slide:nth-child(6), .slide:nth-child(15) {
+    background-image: url(./assets/news/image9.png);
+}
+
+.slide:nth-child(7), .slide:nth-child(16) {
+    background-image: url(./assets/news/image9.png);
+}
+
+.slide:nth-child(8), .slide:nth-child(17) {
+    background-image: url(./assets/news/image9.png);
+}
+
+.slide:nth-child(9), .slide:nth-child(18) {
+    background-image: url(./assets/news/image9.png);
+}
+
+.slider {
+    background: black;
+    height: 250px; 
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.slider .slide {
+    flex: 0 0 100%;
+}
+
+.slider .slide img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.slider .slide-track {
+    animation: scroll 60s linear infinite;
+    display: flex;
+    width: 25%;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-100% * 9));
+    }
+}
