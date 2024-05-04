@@ -56,6 +56,15 @@ a {
     font-family: Roboto;
 }
 
+h2 {
+    margin: 0;
+}
+
+footer {
+    background-color: var(--white-color);
+    font-family: Pricedown;
+}
+
 .nav-container {
     display: flex;
     gap: 5vw;
@@ -78,7 +87,8 @@ a {
     color: var(--black-color);
     font-family: Pricedown;
     justify-content: center;
-    gap: 85px;
+    gap: 5vw;
+    flex-wrap: wrap;
 }
 
 .section-container {
@@ -88,14 +98,18 @@ a {
 }
 
 .section-header {
+    margin: 36px 0 36px 0;
     display: flex;
     justify-content: center;
-
+    font-family: Roboto-Light;
+    align-items: center;
+    gap: 3vw;
 }
 
 .img-text-container {
     display: flex;
     align-items: center;
+    gap: 69px;
 }
 
 .sep-text {
@@ -103,6 +117,10 @@ a {
     flex-direction: column;
     gap: 85px;
     max-width: 150px;
+}
+
+.text-format {
+    max-width: 270px;
 }
 
 :root {
