@@ -78,7 +78,31 @@ a {
     color: var(--black-color);
     font-family: Pricedown;
     justify-content: center;
-    gap: 120px;
+    gap: 85px;
+}
+
+.section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-header {
+    display: flex;
+    justify-content: center;
+
+}
+
+.img-text-container {
+    display: flex;
+    align-items: center;
+}
+
+.sep-text {
+    display: flex;
+    flex-direction: column;
+    gap: 85px;
+    max-width: 150px;
 }
 
 :root {
