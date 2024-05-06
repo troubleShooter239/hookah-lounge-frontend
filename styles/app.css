@@ -110,6 +110,7 @@ footer {
 	display: flex;
 	align-items: center;
 	gap: 69px;
+	margin-bottom: 36px;
 }
 
 .sep-text {
@@ -120,11 +121,14 @@ footer {
 }
 
 .text-format {
-	max-width: 270px;
+	max-width: 250px;
 }
 
-.footer-address {
+.footer-container {
     display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 30vw;
 }
 
 :root {
