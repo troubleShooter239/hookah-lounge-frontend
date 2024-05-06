@@ -1,13 +1,21 @@
 .article-container
 {
     background-color: #151515;
-    position: relative;
-    z-index: 10;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    margin-inline: 150px;
-    margin-bottom: 36px;
+    justify-content: space-between;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.right-arrow-container
+{
+    margin-right: 150px;
+}
+
+.left-arrow-container
+{
+    margin-left: 150px;
 }
 
 .article-handler
@@ -20,6 +28,21 @@
     letter-spacing: 0.04em;
     color: #FFFFFF;
     text-shadow: 0px 4px 4px #6E9F57;
+    margin-inline: 138px;
+}
+
+.container {
+    position: relative; /* Позиционирование контейнера для вложенных элементов */
+}
+
+.area {
+    position: absolute; /* Абсолютное позиционирование */
+    top: 50%; /* Положение сверху на 50% от верхней границы родительского контейнера */
+    left: 50%; /* Положение слева на 50% от левой границы родительского контейнера */
+    transform: translate(-50%, -50%); /* Перемещение контейнера обратно на 50% его ширины и высоты */
+    width: 100%; /* Ширина 100% от родительского контейнера */
+    height: 100%; /* Высота 100% от родительского контейнера */
+    z-index: -1; /* Установка z-index, чтобы задний фон оставался позади */
 }
 
 .pen {
@@ -79,19 +102,19 @@
     opacity: 0.4;
 }
 
-.element.franklin {
+.element.orange {
     background: url('../assets/hookas/-Orange-hookah.svg') 45% 0 no-repeat;
     border-radius: 20px;
     background-size: cover;
 }
 
-.element.michael {
+.element.pomegranate {
     background: url('../assets/hookas/-Pomegranate-hookah.svg') 45% 0 no-repeat;
     border-radius: 20px;
     background-size: cover;
 }
 
-.element.trevor {
+.element.sea-buckthorn {
     background: url('../assets/hookas/-Sea-buckthorn-hookah.svg') 45% 0 no-repeat;
     border-radius: 20px;
     background-size: cover;
@@ -101,7 +124,84 @@
     margin: 0;
 }
 
+@media all and (max-width: 1070px) {
+
+    .article-container
+    {
+        background-color: #151515;
+        position: relative;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-bottom: 36px;
+    }
+
+    .right-arrow-container
+    {
+        margin-right: auto;
+    }
+
+    .left-arrow-container
+    {
+        margin-left: auto;
+    }
+
+    .article-handler
+    {
+        font-family: 'Roboto-Light';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 36px;
+        line-height: 42px;
+        letter-spacing: 0.04em;
+        color: #FFFFFF;
+        text-shadow: 0px 4px 4px #6E9F57;
+    }
+}
+
 @media all and (min-width: 900px) {
+
+    .article-handler
+    {
+        font-family: 'Roboto-Light';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 36px;
+        line-height: 42px;
+        letter-spacing: 0.04em;
+        color: #FFFFFF;
+        text-shadow: 0px 4px 4px #6E9F57;
+        margin-inline: 35px;
+    }
+
+    .right-arrow-container
+    {
+        margin-right: auto;
+    }
+
+    .left-arrow-container
+    {
+        margin-left: auto;
+    }
+
+    .article-handler
+    {
+        font-family: 'Roboto-Light';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 36px;
+        line-height: 42px;
+        letter-spacing: 0.04em;
+        color: #FFFFFF;
+        text-shadow: 0px 4px 4px #6E9F57;
+        margin-inline: 138px;
+    }
+
+    .area{
+        max-width: 890px;
+    }
+
     .pen {
         max-width: 890px;
     }
@@ -125,6 +225,11 @@
 }
 
 @media all and (max-width: 660px) {
+
+    .area{
+        max-width: 335px;
+    }
+
     .pen {
         max-width: 335px;
     }
@@ -143,6 +248,35 @@
 
     .stage {
         max-width: 335px;
+    }
+}
+
+@media all and (max-width: 415px) {
+
+    .area
+    {
+        max-width: 200px;
+    }
+
+    .article-container
+    {
+        justify-content: center;
+    }
+
+    .article-handler
+    {
+        font-size: 24px;
+        margin: 0;
+    }
+
+    .right-arrow-container
+    {
+        margin: 0;
+    }
+
+    .left-arrow-container
+    {
+        margin: 0;
     }
 }
 
@@ -295,4 +429,72 @@
         opacity: 0;
     }
 
+}
+
+.element.loyalty-system {
+    background: #000 45% 0 no-repeat;
+    border-radius: 20px;
+    background-size: cover;
+}
+
+.element.standart {
+    background: #000 45% 0 no-repeat;
+    border-radius: 20px;
+    background-size: cover;
+}
+
+.element.premium {
+    background: #000 45% 0 no-repeat;
+    border-radius: 20px;
+    background-size: cover;
+}
+
+.card-article-container
+{
+    display: flex;
+    justify-content: center;
+    font-family: 'Pricedown';
+    font-size: 24px;
+    margin-top: 36px;
+}
+
+.image-container {
+    position: relative;
+    transition: top 0.5s ease;
+    top: 25%;
+    width: 100%;
+    height: 100%;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease; /* Плавный переход для анимации смещения изображения */
+}
+
+.text-container {
+    position: absolute;
+    top: 50%;
+    font-family: 'Roboto-Light';
+    font-weight: 300;
+    font-size: 18px;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding: 10px 0;
+    transition: opacity 0.15s ease;
+    opacity: 0;
+}
+
+.element.loyalty-system:hover .image-container,
+.element.standart:hover .image-container,
+.element.premium:hover .image-container {
+    top: 0;
+}
+
+.element.loyalty-system:hover .text-container,
+.element.standart:hover .text-container,
+.element.premium:hover .text-container {
+    opacity: 1;
 }
