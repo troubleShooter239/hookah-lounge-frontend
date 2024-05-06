@@ -1,10 +1,385 @@
-body{
-    background-color: black;
-    color:white;
-}
+
 .order
 {
-    background-image: url('./assets/about us/image 13.png');
-    min-height: 100hv;
-    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+}
+
+.information
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container-with-background-img {
+    background-image: url("../assets/about us/image 13.png");
+    min-height: 100vh;
+    min-width: 100vw;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+}
+.info
+{
+    padding: 36px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 5%;
+   
+    align-items: center;
+    gap: 2rem;
+}
+
+.mini-image {
+   margin: 36px 0 36px 0;
+   width: 50%; 
+   height: auto; 
+}
+
+.card-info-container
+{
+    margin-top: 36px;
+    margin-bottom: 36px;
+}
+
+
+
+.order-input
+{
+    background-color: rgba(217, 217, 217, 0.8);
+    
+    border-radius: 5%;
+    width: 430px;
+    height: 540px;
+}
+.text-rg
+{
+    font-family: Roboto-Light;
+    font-size: 24px;
+}
+.text-gta  
+{
+    font-family: Pricedown;
+    font-size: 24px;
+}
+.information
+{
+    display: flex;
+    gap: 2vw;
+}
+
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(217, 217, 217, 0.8);
+    justify-content: space-between;
+    border-radius: 5%;
+}
+
+.slice-input,
+.big-input,
+.but-submit {
+    flex: 1;
+    margin: 36px;
+}
+
+.slice-input {
+    font-size: 24px;
+    font-family: Roboto-Light;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card input,
+.card button {
+    border-radius: 12px;
+    border: 0;
+    color: black;
+    font-size: 24px;
+    font-family: Roboto-Light;
+    width: 100%;
+}
+
+.big-input input {
+    height: 60px;
+}
+
+.card button {
+    background-color: #6E9F57;
+    height: 40px;
+    width: 100%;
+}
+
+.but-submit {
+    display: flex;
+    justify-content: center;
+}
+.slice-input input {
+    width: 70%; 
+}
+
+/*1070 900 660 415*/
+@media screen and (max-width: 1070px)
+{
+    .text-rg
+    {
+        font-family: Roboto-Light;
+        font-size: 24px;
+    }
+    .text-gta  
+    {
+        font-family: Pricedown;
+        font-size: 24px;
+    }
+    .mini-image img {
+        margin: 36px 0 36px 0;
+        width: 50%; 
+        height: auto; 
+    }
+
+    .slice-input {
+        font-size: 24px;
+        font-family: Roboto-Light;
+        display: flex;
+        justify-content: space-between;
+    }
+    .card-info-container
+    {
+        margin-top: 36px;
+        margin-bottom: 36px;
+    }
+    .info
+{
+    padding: 36px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 5%;
+   
+    align-items: center;
+    gap: 2rem;
+}
+    .card input,
+    .card button {
+        border-radius: 12px;
+        border: 0;
+        color: black;
+        font-size: 24px;
+        font-family: Roboto-Light;
+        width: 100%;
+    }
+
+    .big-input input {
+        height: 60px;
+    }
+    .card button {
+        background-color: #6E9F57;
+        height: 40px;
+        width: 100%;
+    }
+    
+}
+
+
+@media screen and (max-width: 900px)
+{
+    .text-rg
+    {
+        font-family: Roboto-Light;
+        font-size: 20px;
+    }
+    .text-gta  
+    {
+        font-family: Pricedown;
+        font-size: 20px;
+    }
+    .mini-image img {
+        margin: 36px 0 36px 0;
+        width: 40%; 
+        height: auto; 
+    }
+    .slice-input {
+        font-size: 20px;
+        font-family: Roboto-Light;
+        display: flex;
+        justify-content: space-between;
+    }
+    .info
+{
+    padding: 36px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 5%;
+   
+    align-items: center;
+    gap: 2rem;
+}
+    .card-info-container
+    {
+        margin-top: 36px;
+        margin-bottom: 36px;
+    }
+    .card input,
+    .card button {
+        border-radius: 12px;
+        border: 0;
+        color: black;
+        font-size: 20px;
+        font-family: Roboto-Light;
+        width: 100%;
+    }
+
+    .big-input input {
+        height: 60px;
+    }
+    .slice-input,
+    .big-input,
+    .but-submit {
+        flex: 1;
+        margin: 36px;
+    }
+    .card button {
+        background-color: #6E9F57;
+        height: 35px;
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 660px)
+{
+    .text-rg
+    {
+        font-family: Roboto-Light;
+        font-size: 14px;
+    }
+    .text-gta  
+    {
+        font-family: Pricedown;
+        font-size: 14px;
+    }
+    .mini-image img {
+        margin: 24px 0 24px 0;
+        width: 30%; 
+        height: auto; 
+    }
+    .information
+    {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .slice-input {
+        font-size: 14px;
+        font-family: Roboto-Light;
+        display: flex;
+        justify-content: space-between;
+    }
+    .info
+{
+    padding: 24px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 5%;
+   
+    align-items: center;
+    gap: 2rem;
+}
+    .card-info-container
+    {
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+    .card input,
+    .card button {
+        border-radius: 12px;
+        border: 0;
+        color: black;
+        font-size: 14px;
+        font-family: Roboto-Light;
+        width: 100%;
+    }
+
+    .big-input input {
+        height: 40px;
+    }
+    .slice-input,
+    .big-input,
+    .but-submit {
+        flex: 1;
+        margin: 24px;
+    }
+    .card button {
+        background-color: #6E9F57;
+        height: 30px;
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 415px)
+{
+    .text-rg
+    {
+        font-family: Roboto-Light;
+        font-size: 8px;
+    }
+    .text-gta  
+    {
+        font-family: Pricedown;
+        font-size: 8px;
+    }
+    .mini-image img {
+        margin: 10px 0 10px 0;
+        width: 30%; 
+        height: auto; 
+    }
+    .information
+    {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .slice-input {
+        font-size: 8px;
+        font-family: Roboto-Light;
+        display: flex;
+        justify-content: space-between;
+    }
+    .info
+{
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 5%;
+   
+    align-items: center;
+    gap: 2rem;
+}
+    .card-info-container
+    {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .card input,
+    .card button {
+        border-radius: 12px;
+        border: 0;
+        color: black;
+        font-size: 8px;
+        font-family: Roboto-Light;
+        width: 100%;
+    }
+
+    .big-input input {
+        height: 40px;
+    }
+    .slice-input,
+    .big-input,
+    .but-submit {
+        flex: 1;
+        margin: 10px;
+    }
+    .card button {
+        background-color: #6E9F57;
+        height: 20px;
+        width: 100%;
+    }
+    
 }

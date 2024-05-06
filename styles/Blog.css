@@ -1,8 +1,25 @@
-body{
+body {
     background-color: black;
-    color:white;
+    color: white;
+    margin: 0; 
+    padding: 0;
 }
 
+header {
+    padding: 1vh 0 1vh 0;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    gap: 8vw;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--black-color-transparent);
+    top: 0; 
+}
+
+main {
+    padding-top: 60px; 
+}
 .news-title{
     font-family: Pricedown;
     font-size: 36px;
@@ -15,6 +32,7 @@ body{
     margin-left: 3rem;
 
 }
+
 .post
 {
     display: flex;
@@ -54,41 +72,6 @@ html, body {
     animation-play-state: paused;
 }
 
-.slide:nth-child(1), .slide:nth-child(10) {
-    background-image: url(./assets/news/image9.png);
-}
-
-.slide:nth-child(2), .slide:nth-child(11) {
-    background-image: url(./assets/news/image9.png);
-}
-
-.slide:nth-child(3), .slide:nth-child(12) {
-    background-image: url(./assets/news/image9.png);
-}
-
-.slide:nth-child(4), .slide:nth-child(13) {
-    background-image: url(./assets/news/image9.png);
-}
-
-.slide:nth-child(5), .slide:nth-child(14) {
-    background-image: url(./assets/news/image9.png);
-}
-
-.slide:nth-child(6), .slide:nth-child(15) {
-    background-image: url(./assets/news/image9.png);
-}
-
-.slide:nth-child(7), .slide:nth-child(16) {
-    background-image: url(./assets/news/image9.png);
-}
-
-.slide:nth-child(8), .slide:nth-child(17) {
-    background-image: url(./assets/news/image9.png);
-}
-
-.slide:nth-child(9), .slide:nth-child(18) {
-    background-image: url(./assets/news/image9.png);
-}
 
 .slider {
     background: black;
