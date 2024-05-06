@@ -333,7 +333,7 @@
     position: absolute;
     display: block;
     list-style: none;
-    background: url('../assets/common/logo.svg') no-repeat; /* Замените путь на путь к вашему логотипу */
+    background: url('../assets/common/logo.png') no-repeat; /* Замените путь на путь к вашему логотипу */
     background-size: contain; /* Это обеспечит масштабирование фона внутри элемента */
     animation: animate 25s linear infinite;
     bottom: -150px; /* Подстраивайте это значение под ваши требования */
