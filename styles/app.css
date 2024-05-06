@@ -1,69 +1,139 @@
 @font-face {
-    font-family: "Comic Sans";
-    src: url("../assets/common/fonts/comicsans.ttf") format("truetype");
+	font-family: 'Comic Sans';
+	src: url('../assets/common/fonts/comicsans.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: "Pricedown";
-    src: url("../assets/common/fonts/pricedown.ttf") format("truetype");
+	font-family: 'Pricedown';
+	src: url('../assets/common/fonts/pricedown.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: "Roboto-Light";
-    src: url("../assets/common/fonts/roboto.ttf") format("truetype");
+	font-family: 'Roboto-Light';
+	src: url('../assets/common/fonts/roboto.ttf') format('truetype');
 }
 
 body {
-    margin: 0;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: var(--black-color);
-    color: var(--white-color);
-    font-family: Comic Sans;
+	margin: 0;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: var(--black-color);
+	color: var(--white-color);
+	font-family: Comic Sans;
 }
 
 header {
-    position: fixed;
-    width: 100%;
-    display: flex;
-    gap: 8vw;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--black-color-transparent);
+	padding: 1vh 0 1vh 0;
+	position: fixed;
+	width: 100%;
+	display: flex;
+	gap: 8vw;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--black-color-transparent);
 }
 
 p {
-    margin: 0;
+	margin: 0;
 }
 
 address {
-    font-family: Pricedown;
+	font-family: Pricedown;
 }
 
 button {
-    border: none;
-    color: var(--white-color);
-    background-color: transparent;
-    padding: 0;
-    cursor: pointer;
-    font-family: Roboto-Light;
+	border: none;
+	color: var(--white-color);
+	background-color: transparent;
+	padding: 0;
+	cursor: pointer;
+	font-family: Roboto-Light;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
-    font-family: Roboto;
+	text-decoration: none;
+	color: inherit;
+	font-family: Roboto;
+}
+
+h2 {
+	margin: 0;
+}
+
+footer {
+	background-color: var(--white-color);
+	font-family: Pricedown;
 }
 
 .nav-container {
+	display: flex;
+	gap: 5vw;
+	flex-wrap: wrap;
+}
+
+.container-with-background-img {
+	display: flex;
+	background-image: url('../assets/index/2telki.png');
+	min-height: 100vh;
+	background-size: cover;
+	justify-content: center;
+	align-items: center;
+}
+
+.besties-container {
+	padding: 60px 60px;
+	display: flex;
+	background-color: var(--white-color);
+	color: var(--black-color);
+	font-family: Pricedown;
+	justify-content: center;
+	gap: 5vw;
+	flex-wrap: wrap;
+}
+
+.section-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.section-header {
+	margin: 36px 0 36px 0;
+	display: flex;
+	justify-content: center;
+	font-family: Roboto-Light;
+	align-items: center;
+	gap: 3vw;
+}
+
+.img-text-container {
+	display: flex;
+	align-items: center;
+	gap: 69px;
+	margin-bottom: 36px;
+}
+
+.sep-text {
+	display: flex;
+	flex-direction: column;
+	gap: 85px;
+	max-width: 150px;
+}
+
+.text-format {
+	max-width: 250px;
+}
+
+.footer-container {
     display: flex;
-    gap: 5vw;
-    flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 30vw;
 }
 
 :root {
-    --green-color: #6e9f57;
-    --black-color: #151515;
-    --white-color: #e1e1e1;
-    --black-color-transparent: #151515a6;
+	--green-color: #6e9f57;
+	--black-color: #151515;
+	--white-color: #e1e1e1;
+	--black-color-transparent: #151515a6;
 }
