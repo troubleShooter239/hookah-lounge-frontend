@@ -1,0 +1,12 @@
+.reserve-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 21px;
+}
+
+.reserve-lounge-btn {
+    background-color: var(--green-color);
+    border-radius: 60px;
+    padding: 15px 35px;
+}
