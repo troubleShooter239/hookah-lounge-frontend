@@ -1,16 +1,16 @@
 @font-face {
-	font-family: 'Comic Sans';
-	src: url('../assets/common/fonts/comicsans.ttf') format('truetype');
+	font-family: "Comic Sans";
+	src: url("../assets/common/fonts/comicsans.ttf") format("truetype");
 }
 
 @font-face {
-	font-family: 'Pricedown';
-	src: url('../assets/common/fonts/pricedown.ttf') format('truetype');
+	font-family: "Pricedown";
+	src: url("../assets/common/fonts/pricedown.ttf") format("truetype");
 }
 
 @font-face {
-	font-family: 'Roboto-Light';
-	src: url('../assets/common/fonts/roboto.ttf') format('truetype');
+	font-family: "Roboto-Light";
+	src: url("../assets/common/fonts/roboto.ttf") format("truetype");
 }
 
 body {
@@ -74,7 +74,7 @@ footer {
 
 .container-with-background-img {
 	display: flex;
-	background-image: url('../assets/index/2telki.png');
+	background-image: url("../assets/index/2telki.png");
 	min-height: 100vh;
 	background-size: cover;
 	justify-content: center;
@@ -126,7 +126,9 @@ footer {
 }
 
 .footer-container {
-    display: flex;
+	background-color: var(--black-color-transparent);
+	padding: 10px 0 10px 0;
+	display: flex;
 	justify-content: center;
 	align-items: center;
 	gap: 30vw;
