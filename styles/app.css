@@ -20,11 +20,12 @@ body {
 	background-color: var(--black-color);
 	color: var(--white-color);
 	font-family: Comic Sans;
-}
+}	
 
 header {
 	padding: 1vh 0 1vh 0;
 	position: fixed;
+	z-index: 99999999;
 	width: 100%;
 	display: flex;
 	gap: 8vw;
