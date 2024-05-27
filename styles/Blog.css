@@ -1,0 +1,297 @@
+body {
+    background-color: black;
+    color: white;
+    margin: 0; 
+    padding: 0;
+}
+
+header {
+    padding: 1vh 0 1vh 0;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    gap: 8vw;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--black-color-transparent);
+    top: 0; 
+}
+
+main {
+    padding-top: 60px; 
+}
+.news-title{
+    font-family: Pricedown;
+    font-size: 36px;
+}
+
+.news-text
+{
+    width: 60%;
+    font-size: 24px;
+    margin-left: 3rem;
+    gap: 1;
+
+}
+
+.post
+{
+    display: flex;
+    justify-content: center;
+    margin: 3rem;
+    width: auto;
+
+}
+.news-section
+{
+    margin-inline: 6rem;
+    justify-content: center;
+}
+.post img{
+    width:40%;
+    height: 40%;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.slider::before, .slider::after {
+    background: linear-gradient(to right, black 0%, rgba(255, 255, 255, 0) 100%);
+    content: "";
+    height: 100%;
+    position: absolute;
+    width: 100px;
+    z-index: 2;
+}
+
+.slider::after {
+    right: 0;
+    top: 0;
+    -webkit-transform: rotateZ(180deg);
+    transform: rotateZ(180deg);
+}
+
+.slider::before {
+    left: 0;
+    top: 0;
+}
+
+.slider .slide-track:hover {
+    animation-play-state: paused;
+}
+
+
+.slider {
+    background: black;
+    height: 250px; 
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.slider .slide {
+    flex: 0 0 100%;
+}
+
+.slider .slide img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.slider .slide-track {
+    animation: scroll 60s linear infinite;
+    display: flex;
+    width: 25%;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-100% * 9));
+    }
+}
+
+
+@media screen and (min-width: 2600px)
+{
+    .news-title{
+        font-family: Pricedown;
+        font-size: 36px;
+    }
+    
+    .news-text
+    {
+        width: 20%;
+        font-size: 24px;
+        margin-left: 3rem;
+    
+    }
+    
+    .post
+    {
+        display: flex;
+        justify-content: center;
+        margin: 3rem;
+        width: auto;
+    
+    }
+    .news-section
+    {
+    margin-inline: 10rem;
+    justify-content: center;
+    }
+    .post img{
+        width: 20%;
+        height: 20%;
+    }
+}
+@media screen and (max-width: 1250px)
+{
+    .news-title{
+        font-family: Pricedown;
+        font-size: 36px;
+    }
+    
+    .news-text
+    {
+        width: 60%;
+        font-size: 24px;
+        margin-left: 3rem;
+    
+    }
+    
+    .post
+    {
+        display: flex;
+        justify-content: center;
+        margin: 3rem;
+        width: auto;
+    
+    }
+    .post img{
+        width: 80%;
+        height: auto;
+    }
+}
+@media screen and (max-width: 1100px)
+{
+    .news-title{
+        font-family: Pricedown;
+        font-size: 36px;
+    }
+    
+    .news-text
+    {
+        width: 60%;
+        font-size: 24px;
+        margin-left: 3rem;
+        margin-left: 0;
+        text-align: center;
+    }
+    
+    .post
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 3rem;
+        width: auto;
+    
+    }
+    .post img{
+        width: 80%;
+        height: auto;
+    }
+}
+@media screen and (max-width: 900px)
+{
+    .news-title{
+        font-family: Pricedown;
+        font-size: 26px;
+    }
+    
+    .news-text
+    {
+        width: 60%;
+        font-size: 20px;
+        
+        text-align: center;
+    }
+    
+    .post
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 2rem;
+        width: auto;
+    
+    }
+    .post img{
+        width: 80%;
+        height: auto;
+    }
+}
+@media screen and (max-width: 660px)
+{
+    .news-title{
+        font-family: Pricedown;
+        font-size: 20px;
+    }
+    
+    .news-text
+    {
+        width: 60%;
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    .post
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 2rem;
+        width: auto;
+    
+    }
+    .post img{
+        width: 60%;
+        height: 60%;
+    }
+}
+@media screen and (max-width: 660px)
+{
+    .news-title{
+        font-family: Pricedown;
+        font-size: 14px;
+    }
+    
+    .news-text
+    {
+        width: 60%;
+        font-size: 8px;
+        text-align: center;
+    }
+    
+    .post
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 2rem;
+        width: auto;
+    
+    }
+    .post img{
+        width: 60%;
+        height: 60%;
+    }
+}
