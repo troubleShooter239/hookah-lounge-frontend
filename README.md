@@ -1,6 +1,6 @@
 # hookah-lounge-frontend
 
-![GTA Style Hookah Lounge](./assets/banner.jpg)
+![GTA Style Hookah Lounge](./assets/common/logo.png)
 
 ## Добро пожаловать в Hookah Lounge!
 
